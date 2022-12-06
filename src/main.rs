@@ -18,7 +18,7 @@ fn main() {
     tracing::subscriber::set_global_default(subscriber).unwrap();
     info!("Started web app");
 
-    let listener = TcpListener::bind("localhost:8081").unwrap();
+    let listener = TcpListener::bind("localhost:8080").unwrap();
     let pool = ThreadPool::new(4);
     for stream in listener.incoming() {
         let _stream = stream.unwrap();
