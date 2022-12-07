@@ -1,4 +1,4 @@
-name: Demo Push
+name: Openshift Rust App Build
 
 on:
   push:
